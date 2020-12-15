@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/w3css/3/w3.css">
+<link rel="stylesheet" Type="text/css" href="resize.css">
+<body style="background-color:mediumseagreen;">
+
+<!-- Navigation -->
+<nav style="background-color:crimson; text-align:center; font-size:200%;" class="w3-bar w3-black">
+  <a style="color:white" href="accueil.html" class="w3-button w3-bar-item"><b>Accueil</b></a>
+  <a style="color:white" href="liste.html" class="w3-button w3-bar-item"><b>Liste</b></a>
+  <a style="color:white" href="avent.html" class="w3-button w3-bar-item"><b>Avent</b></a>
+  <a style="color:white" href="contact.html" class="w3-button w3-bar-item"><b>Contact</b></a>
+</nav>
+
+<div class="snow" />
+<style>
+.editor-stage .snow {
+  height:50px;
+  background: #fff;
+}
+.snow{
+  position:fixed;
+  pointer-events:none;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  height:100vh;
+  background: none;
+  background-image: url('https://s3-eu-west-1.amazonaws.com/static-ressources/s1.png'), url('https://s3-eu-west-1.amazonaws.com/static-ressources/s2.png'), url('https://s3-eu-west-1.amazonaws.com/static-ressources/s3.png');
+  z-index:100;
+  -webkit-animation: snow 10s linear infinite;
+  -moz-animation: snow 10s linear infinite;
+  -ms-animation: snow 10s linear infinite;
+  animation: snow 10s linear infinite;
+}
+@keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-moz-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 400px 1000px, 200px 400px, 100px 300px;}
+}
+@-webkit-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-ms-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+</style>
+
+<p>
+</body>
+</html>
