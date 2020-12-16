@@ -3,7 +3,7 @@
 <meta charset="UTF-8">
 <header role="banner">
   <div id="text" class="text">Le coin du Père Noël</div>
-</header> 
+</header>
 <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" Type="text/css" href="contact.css">
@@ -12,7 +12,7 @@
 <!-- Navigation -->
 <nav style="background-color:crimson; text-align:center; font-size:200%;" class="w3-bar w3-black">
   <a style="color:white" href="accueil.html" class="w3-button w3-bar-item"><b>Accueil</b></a>
-  <a style="color:white" href="liste.html" class="w3-button w3-bar-item"><b>Liste</b></a>
+
   <a style="color:white" href="avent.html" class="w3-button w3-bar-item"><b>Avent</b></a>
   <a style="color:white" href="contact.html" class="w3-button w3-bar-item"><b>Coin écriture</b></a>
 </nav>
@@ -20,21 +20,15 @@
 <div class="bg">
 	<div class="centerer">
 		<div id="text" class="textQuestion">As-tu été sage cette année?</div>
-		<a class="button" type="button" onclick="openForm()">Oui</a>
+		<a href="sage.html" class="button" type="button" onclick="openForm()">Oui</a>
 		<a class="button" onclick="lettreNOk()">Non</a>
 		<p id="hidden">.</p>
 	</div>
 </div>
 
- <div class="form-popup" id="myLetter">
-  <form class="form-container">
-    <label for="letterInput"></label>
-    <input type="text" placeholder="Cher Père Noël,">
 
-    <button type="submit" class="button" onclick="closeForm()">Envoyer en Laponie</button>
-    <button type="cancel" class="button" onclick="closeForm()">Fermer</button>
-  </form>
-</div> 
+
+
 
 
 
@@ -101,7 +95,7 @@ function openForm() {
 
 function closeForm() {
   document.getElementById("myLetter").style.display = "none";
-} 
+}
 
 </script>
 

@@ -1,18 +1,38 @@
 <!DOCTYPE html>
 <html>
 <meta charset="UTF-8">
+<header role="banner">
+  <div id="text" class="text">Le coin du Père Noël</div>
+</header>
+<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="/w3css/3/w3.css">
-<link rel="stylesheet" Type="text/css" href="resize.css">
+<link rel="stylesheet" Type="text/css" href="contact.css">
 <body style="background-color:mediumseagreen;">
 
 <!-- Navigation -->
 <nav style="background-color:crimson; text-align:center; font-size:200%;" class="w3-bar w3-black">
   <a style="color:white" href="accueil.html" class="w3-button w3-bar-item"><b>Accueil</b></a>
-  <a style="color:white" href="liste.html" class="w3-button w3-bar-item"><b>Liste</b></a>
+  
   <a style="color:white" href="avent.html" class="w3-button w3-bar-item"><b>Avent</b></a>
-  <a style="color:white" href="contact.html" class="w3-button w3-bar-item"><b>Contact</b></a>
+  <a style="color:white" href="contact.html" class="w3-button w3-bar-item"><b>Coin écriture</b></a>
 </nav>
+
+<div class="bg">
+	<div class="centerer">
+    <form action="https://mailthis.to/oliveoly"
+        method="POST">
+        <input type="text" name="name" placeholder="Your name">
+        <input type="email" name="_replyto" placeholder="Your email">
+        <button type="submit" class="button" value="Send" onClick="closeForm()">Envoyer en Laponie</button>>
+    </form>
+	</div>
+</div>
+
+
+
+
+
+
 
 <div class="snow" />
 <style>
@@ -59,5 +79,27 @@
 </style>
 
 <p>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+function lettreNOk() {
+  document.getElementById("hidden").innerHTML = "Hmm, grâce à toi le Père Noël finira plus vite sa tournée...";
+}
+function letterSent(e) {
+  e.preventDefault();
+  document.getElementById("hidden").innerHTML = "Lettre envoyée! Les lutins sont en train de la transporter";
+}
+document.getElementById("myLetter").addEventListener("submit", letterSent);
+
+function openForm() {
+  document.getElementById("myLetter").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myLetter").style.display = "none";
+}
+
+</script>
+
 </body>
 </html>
