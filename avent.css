@@ -1,5 +1,26 @@
 
 
+body{
+ /*background: #FFF;*/
+  font-family: 'Lobster', cursive;
+  color: #ffffff;
+  background: #C0392B;
+  background: repeating-linear-gradient(
+  45deg,
+  #2ECC71,
+  #2ECC71 10px,
+  #27AE60 10px,
+  #27AE60 20px
+);
+}
+
+@media {
+  .text {
+    font-size: 80px;
+	text-align: center;
+  }
+}
+
 /* title graphic */
 .title {
   display: flex;
@@ -238,8 +259,8 @@ label {
     justify-content: center;
 
     /* typography */
-    font-family: 'Kalam', cursive;
-    color: #dc143c;
+    font-family: 'Lobster', cursive;
+    color: #fffff;
     font-size: 2em;
     font-weight: bold;
     text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.2);
@@ -260,16 +281,3 @@ label {
   :checked + .door {
     transform: rotateY(180deg);
   }
-
-
-/* footer styles */
-footer {
-  text-align: center;
-  padding: 2em 0;
-}
-  footer a {
-      color: #2e313d;
-  }
-    footer a:hover {
-          text-decoration: none;
-    }
